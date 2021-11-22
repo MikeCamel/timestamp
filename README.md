@@ -1,7 +1,9 @@
 # timestamp
 Simple timestamp
 
-Currently just takes a message on stdin, and outputs it to stdout with a timestamp.
+Currently takes a message on `stdin`, and hashes it outputs the following to `stdout`:
+- Input
+- Hash + timestampit to stdout with a timestamp.
 
 TODO:
 - add hashing
