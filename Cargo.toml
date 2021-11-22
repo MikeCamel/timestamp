@@ -9,3 +9,4 @@ edition = "2021"
 chrono = "0.4"
 hex-literal = "0.3.4"
 sha2 = "0.9.8"
+openssl = { version = "0.10.38", features = ["vendored"] }
