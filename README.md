@@ -4,6 +4,9 @@ Simple timestamp
 Dependencies:
  - openssl-devel
  - perl-IPC-Cmd
+ - perl-FindBin
+ - perl-File-Copy
+ - perl-File-Compare
 
 Currently takes a message on `stdin`, and hashes it outputs the following to `stdout`:
 - Input
