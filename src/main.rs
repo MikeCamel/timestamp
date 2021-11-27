@@ -8,11 +8,11 @@ use rand_core::OsRng;
 fn main() -> Result<()> {
     //TODO - multiple runs (only print public key once?)
     //TODO - prettify output (inc. signature?)
-    //TODO - stdout.write_all for all output
+    //TODO - sntp support
     let signing_key = SigningKey::random(&mut OsRng); 
     let verify_key = VerifyingKey::from(&signing_key); 
-    println!("We'll be operating with the following public key:");
-    println!("{:?}", verify_key);
+    let initial_output = format!("We'll be operating with the following public key: {:?}", verify_key);
+    stdout().write_all(initial_output.as_bytes())?;
 
     let mut buffer = String::new();
     stdin().read_line(&mut buffer)?;
